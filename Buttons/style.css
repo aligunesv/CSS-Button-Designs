@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	flex-direction: column;
+	background: #111;
+}
+
+
+h1{
+	color: rgba(255, 255, 255, 0.4);
+	border: 1px solid #2185d5;
+	padding: 15px;
+	margin-bottom: 30px;
+	letter-spacing: 2px;
+}
+
+h1:hover{
+	transition: 0.5s;
+	color: rgba(255, 255, 255, 1);
+	letter-spacing: 8px;
+
+}
+
+
+.buttonsContent{
+	padding: 70px;
+	border: 1px solid #2185d5;
+	border-radius: 8px;
+}
+
+
+/*SIMPLE HOVER BUTTON*/
+.simple{
+	height: 40px;
+	width: 150px;
+	position: relative;
+	padding: 10px;
+	font-size: 16px;
+	color: rgba(255, 255, 255, 0.4);
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 2px;
+	transition: 0.5s;
+	margin: 20px;
+	border-radius: 4px;
+}
+
+.simple:hover{
+	background: #2185d5;
+	color: rgba(255, 255, 255, 1);
+}
+/*SIMPLE HOVER BUTTON END*/
+
+
+/*BORDER ANIMATION HOVER BUTTON*/
+.borderBtn{
+	height: 40px;
+	width: 150px;
+	font-size: 16px;
+	text-align: center;
+	position: relative;
+	padding: 10px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: rgba(255, 255, 255, 0.4);
+	letter-spacing: 2px;
+	transition: 0.5s;
+	margin: 20px;
+}
+
+.borderBtn:hover{
+	color: rgba(255, 255, 255, 1);
+}
+
+.borderBtn span{
+	display: block;
+	position: absolute;
+	background: #2185d5;
+}
+
+.borderBtn span:nth-child(1){
+	left: 0;
+	bottom: 0;
+	width: 2px;
+	height: 100%;
+	transform: scaleY(0);
+	transform-origin: top;
+	transition: transform 0.5s;
+}
+
+.borderBtn:hover span:nth-child(1){
+	transform: scaleY(1);
+	transform-origin: bottom;
+	transition: transform 0.5s;
+}
+
+.borderBtn span:nth-child(2){
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 2px;
+	transform: scaleX(0);
+	transform-origin: right;
+	transition: transform 0.5s;
+}
+
+.borderBtn:hover span:nth-child(2){
+	transform: scaleX(1);
+	transform-origin: left;
+	transition: transform 0.5s;
+}
+
+.borderBtn span:nth-child(3){
+	right: 0;
+	bottom: 0;
+	width: 2px;
+	height: 100%;
+	transform: scaleY(0);
+	transform-origin: bottom;
+	transition: transform 0.5s;
+}
+
+.borderBtn:hover span:nth-child(3){
+	transform: scaleY(1);
+	transform-origin: top;
+	transition: transform 0.5s;
+}
+
+.borderBtn span:nth-child(4){
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 2px;
+	transform: scaleX(0);
+	transform-origin: left;
+	transition: transform 0.5s;
+}
+
+.borderBtn:hover span:nth-child(4){
+	transform: scaleX(1);
+	transform-origin: right;
+	transition: transform 0.5s;
+}
+/*BORDER ANIMATION HOVER BUTTON END*/
+
+
+/*LINEAR BUTTON*/
+.linearClrBtn{
+	height: 40px;
+	width: 150px;
+	font-size: 16px;
+	text-align: center;
+	position: relative;
+	padding: 10px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: rgba(255, 255, 255, 0.4);
+	letter-spacing: 2px;
+	transition: 0.5s;
+	margin-bottom: 30px;
+}
+
+.linearClrBtn:hover{
+	color: rgba(255, 255, 255, 1);
+}
+
+.linearClrBtn span{
+	display: block;
+	position: absolute;
+	background: #2185d5;
+}
+
+.linearClrBtn span:nth-child(1){
+	left: 0;
+	bottom: 0;
+	width: 2px;
+	height: 100%;
+	transform: scaleY(0);
+	transform-origin: bottom;
+	transition: transform 0.5s;
+}
+
+.linearClrBtn:hover span:nth-child(1){
+	transform: scaleY(1);
+	transform-origin: top;
+	transition: transform 0.5s;
+}
+
+.linearClrBtn span:nth-child(2){
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 2px;
+	transform: scaleX(0);
+	transform-origin: right;
+	transition: transform 0.5s;
+	transition-delay: 0.5s;
+}
+
+.linearClrBtn:hover span:nth-child(2){
+	transform: scaleX(1);
+	transform-origin: left;
+	transition: transform 0.5s;
+	transition-delay: 0.5s;
+}
+
+.linearClrBtn span:nth-child(3){
+	right: 0;
+	bottom: 0;
+	width: 2px;
+	height: 100%;
+	transform: scaleY(0);
+	transform-origin: top;
+	transition: transform 0.5s;
+	transition-delay: 1s;
+}
+
+.linearClrBtn:hover span:nth-child(3){
+	transform: scaleY(1);
+	transform-origin: bottom;
+	transition: transform 0.5s;
+	transition-delay: 1s;
+}
+
+.linearClrBtn span:nth-child(4){
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 2px;
+	transform: scaleX(0);
+	transform-origin: left;
+	transition: transform 0.5s;
+	transition-delay: 1.5s;
+}
+
+.linearClrBtn:hover span:nth-child(4){
+	transform: scaleX(1);
+	transform-origin: right;
+	transition: transform 0.5s;
+	transition-delay: 1.5s;
+}
+/*LINEAR BUTTON END*/
+
+
+/*NEON BUTTON*/
+.neonBtn{
+	height: 40px;
+	width: 150px;
+	font-size: 16px;
+	text-align: center;
+	position: relative;
+	padding: 10px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: rgba(255, 255, 255, 0.4);
+	letter-spacing: 2px;
+	transition: 0.5s;
+	margin: 20px;
+	border: 2px solid #2185d5;
+	border-radius: 4px;
+}
+
+.neonBtn:hover{
+	box-shadow: 50px 50px 50px 50px #2185d5 inset,
+				0 5px 50px 0 #2185d5;
+	color: rgba(255, 255, 255, 1);
+			
+}
+/*NEON BUTTON END*/
+
+
+/*LIQUID BUTTON*/
+.liquidBtn{
+	height: 40px;
+	width: 150px;
+	font-size: 16px;
+	text-align: center;
+	position: relative;
+	padding: 10px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: rgba(255, 255, 255, 0.4);
+	letter-spacing: 2px;
+	transition: 0.5s;
+	margin: 20px;
+	border: 2px solid #2185d5;
+	border-radius: 4px;
+}
+
+.liquidBtn::before{
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 0%;
+	background: #2185d5;
+	z-index: -1;
+	transition: 0.8s;
+}
+
+.liquidBtn:hover{
+	color: rgba(255, 255, 255, 1);
+}
+
+.liquidBtn:hover::before{
+	height: 100%;
+	border-radius: 0 0 50% 50%;
+	top: 0;
+}
+/*LIQUID BUTTON END*/
+
+
+/*CHANGING BG COLOR BUTTON*/
+.bgchangingBtn{
+	height: 40px;
+	width: 150px;
+	font-size: 16px;
+	text-align: center;
+	position: relative;
+	padding: 10px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: rgba(255, 255, 255, 0.4);
+	letter-spacing: 2px;
+	background-color: #303841;
+	margin: 20px;
+	border-radius: 4px;
+	box-shadow: inset 0 0 0 0 #2185d5;
+	transition: ease-out 0.5s;
+}
+
+.bgchangingBtn:hover{
+	border: 2px solid #2185d5;
+	color: rgba(255, 255, 255, 1);
+	box-shadow: inset 300px 0 0 0 #2185d5;
+}
+/*CHANGING BG COLOR BUTTON END*/
+
+
+
+
+
+/*FOOTER*/
+
+.footer{
+	position: absolute;
+	text-align: center;
+	z-index: 10;
+	height: 100px;
+	width: 500px;
+	bottom: 0;
+}
+
+.socials a{
+	color: #fff;
+	padding: 10px;
+	text-decoration: none;
+	letter-spacing: 2px;
+	font-size: 12px;
+}
+
+.socials a:hover{
+	transition: 0.5s;
+	color: #2185d5;
+}
+
+.copyright{
+	top: 30px;
+	letter-spacing: 2px;
+	position: relative;
+	color: #fff;
+	text-align: center;
+	font-size: 12px;
+}
